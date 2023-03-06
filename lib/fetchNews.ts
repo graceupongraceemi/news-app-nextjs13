@@ -10,3 +10,6 @@ const fetchNews = async (
 };
 
 export default fetchNews;
+
+// Example Import
+// stepzen import curl "http://api.mediastack.com/v1/news?access_key=abc"
