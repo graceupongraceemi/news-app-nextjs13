@@ -7,8 +7,18 @@ const fetchNews = async (
 ) => {
   //  GraphQL query
   const query = gql`
-    query MyQuery {
-      myQuery(access_key: '7c159e25ac6de95956c14e0385cd33b2') {
+    query MyQuery(
+      $access_key: String!
+      $categories: String!
+      $keywords: String
+    ) {
+      myQuery(
+        access_key: $access_key
+        categories: $categories
+        countries: "us"
+        sort: "published_desc"
+        keywords: $keywords
+      ) {
         data {
           author
           category
@@ -28,7 +38,7 @@ const fetchNews = async (
           total
         }
       }
-    }    
+    }
   `;
   // Fetch function with Next.js 13 caching...
   // Sort function by images vs not images present
