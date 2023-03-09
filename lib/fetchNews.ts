@@ -6,7 +6,7 @@ const fetchNews = async (
   isDynamic?: boolean
 ) => {
   //  GraphQL query
-  const GET_QUERY = gql`
+  const query = gql`
     query MyQuery {
       myQuery(access_key: '7c159e25ac6de95956c14e0385cd33b2') {
         data {
