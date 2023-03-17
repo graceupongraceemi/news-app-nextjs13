@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import Header from './Header';
+import Providers from './Providers';
 
 // export const metadata = {
 //   title: 'Next.js',
@@ -15,10 +16,12 @@ export default function RootLayout({
     <html lang='en'>
       <head />
 
-      <body className='bg-gray-100 transition-all duration-700'>
-        <Header />
-        <div className='max-w-6xl mx-auto'>{children}</div>
-      </body>
+      <Providers>
+        <body className='bg-gray-100 transition-all duration-700'>
+          <Header />
+          <div className='max-w-6xl mx-auto'>{children}</div>
+        </body>
+      </Providers>
     </html>
   );
 }
