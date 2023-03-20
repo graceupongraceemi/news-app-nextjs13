@@ -1,6 +1,10 @@
-import React from 'react';
+'use client';
 
-function ReadMoreButton() {
+type Props = {
+  article: Article;
+};
+
+function ReadMoreButton({ article }: Props) {
   return <div>ReadMoreButton</div>;
 }
 

@@ -30,7 +30,7 @@ function Article({ article }: Props) {
         </div>
 
         {/* ReadMoreButton */}
-        <ReadMoreButton />
+        <ReadMoreButton article={article} />
       </div>
     </article>
   );
