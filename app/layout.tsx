@@ -14,8 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <head />
-
       <Providers>
         <body className='bg-gray-100 transition-all duration-700'>
           <Header />
