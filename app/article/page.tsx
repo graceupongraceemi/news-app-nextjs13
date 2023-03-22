@@ -24,6 +24,17 @@ function ArticlePage({ searchParams }: Props) {
             alt={article.title}
           />
         )}
+
+        <div className='px-10'>
+          <h1 className='headerTitle px-0 no-underline pb-2'>
+            {article.title}
+          </h1>
+
+          <div>
+            <h2 className='font-bold'>By: {article.author || 'unknown'}</h2>
+            <h2 className='font-bold pl-4'>Source: {article.source}</h2>
+          </div>
+        </div>
       </section>
     </article>
   );
