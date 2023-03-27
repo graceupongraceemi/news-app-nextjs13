@@ -35,7 +35,7 @@ function ArticlePage({ searchParams }: Props) {
             <h2 className='font-bold'>By: {article.author || 'unknown'}</h2>
             <h2 className='font-bold pl-4'>Source: {article.source}</h2>
             <p className='pl-4'>
-              <LiveTimestamp{article.published_at} />
+              <LiveTimestamp time={article.published_at} />
             </p>
           </div>
 
